@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 
@@ -11,6 +12,7 @@ function App() {
         third="Contact Us"
       />
       <TextForm heading="Text Area" />
+      <About />
     </>
   );
 }

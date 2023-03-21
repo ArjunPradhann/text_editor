@@ -9,6 +9,10 @@ export default function TextForm(props) {
     setText(newText);
   };
 
+  const handleLoClick = () => {
+    let newText = text.toLowerCase();
+    setText(newText);
+  };
   const handleOnChanger = (event) => {
     setText(event.target.value);
   };
@@ -22,12 +26,20 @@ export default function TextForm(props) {
           className="h-20 border-solid"
           onChange={handleOnChanger}
         ></textarea>
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex flex-row"
-          onClick={handleUpClick}
-        >
-          Conver to UpperCase
-        </button>
+        <div>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+            onClick={handleUpClick}
+          >
+            Conver to UpperCase
+          </button>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={handleLoClick}
+          >
+            Conver to LowerCase
+          </button>
+        </div>
       </div>
       <div className="container mt-2 ml-10">
         <h1>Your text summary</h1>
