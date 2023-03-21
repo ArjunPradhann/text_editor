@@ -1,11 +1,7 @@
+import Navbar from "./components/Navbar";
+
 function App() {
-  return (
-    <nav>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-    </nav>
-  );
+  return <Navbar first="Home" second="About" third="Contact Us" />;
 }
 
 export default App;
