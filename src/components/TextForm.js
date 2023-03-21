@@ -34,6 +34,10 @@ export default function TextForm(props) {
         <p>
           {text.split(" ").length} words {text.length} character
         </p>
+        <h2 className="mt-5">
+          <strong>Preview</strong>
+        </h2>
+        <p>{text}</p>
       </div>
     </div>
   );
