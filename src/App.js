@@ -10,7 +10,7 @@ function App() {
         second="About"
         third="Contact Us"
       />
-      <TextForm />
+      <TextForm heading="Text Area" />
     </>
   );
 }
